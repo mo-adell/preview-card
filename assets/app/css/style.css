@@ -1,0 +1,120 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background: #f2f2f2;
+  font: 1rem "Big Shoulders Display", cursive;
+}
+
+main {
+  min-height: 100vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+section {
+  max-width: 60%;
+  display: flex;
+  flex-flow: row nowrap;
+  border-radius: 8px;
+}
+section .card {
+  background: #e38826;
+  padding: 2rem;
+  color: #fff;
+  border-radius: 10px 0 0 10px;
+}
+@media screen and (max-width: 930px) {
+  section .card {
+    border-radius: 10px 10px 0 0;
+  }
+}
+section .card .img {
+  width: 50px;
+  height: 50px;
+  background: transparent url("../images/icon-sedans.svg") no-repeat center/contain;
+}
+section .card h1 {
+  margin: 1.2rem 0 1.5rem;
+  font-size: 2rem;
+  text-transform: uppercase;
+}
+section .card p {
+  font: 1rem "Lexend Deca", sans-serif;
+  color: rgba(255, 255, 255, 0.75);
+  margin-bottom: 4.5rem;
+  line-height: 1.6;
+}
+@media screen and (min-width: 700px) and (max-width: 1100px) {
+  section .card p {
+    font-size: 0.8rem;
+  }
+}
+@media screen and (max-width: 900px) {
+  section .card p {
+    font-size: 1.4rem;
+  }
+}
+section .card button {
+  cursor: pointer;
+  border: none;
+  border-radius: 100px;
+  padding: 15px 30px;
+  font: 1rem "Lexend Deca", sans-serif;
+  color: #e38826;
+  margin-bottom: 1.1rem;
+  transition: color, background 0.4s;
+}
+@media screen and (min-width: 700px) and (max-width: 1100px) {
+  section .card button {
+    padding: 10px 20px;
+  }
+}
+section .card button:hover {
+  color: #f2f2f2;
+  background: transparent;
+  border: 2px solid #f2f2f2;
+}
+section .card:nth-child(2) {
+  background: #006970;
+  border-radius: 0;
+}
+section .card:nth-child(2) button {
+  color: #006970;
+}
+section .card:nth-child(2) button:hover {
+  color: #f2f2f2;
+}
+section .card:nth-child(2) .img {
+  background: transparent url("../images/icon-suvs.svg") no-repeat center/contain;
+}
+section .card:nth-child(3) {
+  background: #004241;
+  border-radius: 0 10px 10px 0;
+}
+@media screen and (max-width: 930px) {
+  section .card:nth-child(3) {
+    border-radius: 0 0 10px 10px;
+  }
+}
+section .card:nth-child(3) button {
+  color: #004241;
+}
+section .card:nth-child(3) button:hover {
+  color: #f2f2f2;
+}
+section .card:nth-child(3) .img {
+  background: transparent url("../images/icon-luxury.svg") no-repeat center/contain;
+}
+@media screen and (max-width: 930px) {
+  section {
+    flex-flow: column wrap;
+    margin: 5rem 0;
+    max-width: 90%;
+  }
+}

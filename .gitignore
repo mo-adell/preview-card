@@ -2,5 +2,5 @@
 src/
 *.json
 node_modules/
-
+build/
 gulpfile.js
